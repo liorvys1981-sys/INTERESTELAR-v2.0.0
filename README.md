@@ -1,62 +1,123 @@
-# INTERESTELAR v2.0.0 — Autonomous Financial Governance
+# INTERESTELAR v2.0.0 — Autonomous Financial Governance Platform
 
-## Quick Start — Ejecutar en tu maquina local
+## Descripción
 
-### 1. Requisitos
-- **Node.js 20+** — Descargar desde https://nodejs.org
-- **npm** (viene con Node.js)
+INTERESTELAR v2.0.0 es una plataforma de gobernanza financiera autónoma de grado empresarial. Detecta, sobrevive y mitiga autónomamente escenarios de colapso financiero catastrófico mientras preserva la continuidad de la plataforma, la rentabilidad y la supervivencia operativa.
 
-### 2. Instalacion
-```bash
-# Descomprimir el ZIP
-cd INTERESTELAR-app
+## Características Principales
 
-# Instalar dependencias
-npm install
+- **10 Eventos de Crisis Simultáneos** — Black Swan Cascade stress test
+- **12 Agentes Autónomos** — Cada uno con rol específico (CORE, FINANCIAL, SECURITY, INFRA)
+- **3 Suites de Stress Tests** — Chaos War, Black Swan Financial, Governance Attack
+- **Panel de Admin Completo** — Dashboard, Agent Control, Tenants, Governance, Audit Logs, Settings
+- **5 Idiomas** — Español, English, 中文, हिन्दी, العربية
+- **Diseño Profesional Luminoso** — Tema claro con oficinas de IA visuales
 
-# Ejecutar en modo desarrollo (hot reload)
-npm run dev
+## Estructura del Proyecto
+
+```
+├── src/
+│   ├── pages/           # 11 páginas (CommandCenter, Incidents, StressTests, Agents, FinancialDefense, Infrastructure, Tenants, Governance, Monetization, Survivability, Admin)
+│   ├── components/      # Componentes compartidos (NavigationBar, StatusBadge, PageHeader, GlobalFooter)
+│   ├── hooks/           # Custom hooks
+│   ├── i18n/            # 5 archivos de traducción (es, en, zh, hi, ar)
+│   ├── lib/             # Utilidades
+│   ├── index.css        # Estilos globales
+│   ├── App.tsx          # Router principal
+│   └── main.tsx         # Entry point
+├── api/                 # Backend tRPC + Hono
+│   ├── routers/         # 9 routers (crisis, decisions, infrastructure, tenant, financial, audit, governance, monetization, survivability)
+│   ├── middleware.ts    # Procedimientos tRPC
+│   ├── router.ts        # App router
+│   └── boot.ts          # Hono server
+├── db/
+│   ├── schema.ts        # 20 tablas Drizzle ORM
+│   └── seed.ts          # Script de seed con datos completos
+├── contracts/           # Tipos compartidos frontend/backend
+├── public/assets/       # 10 imágenes profesionales generadas con IA
+└── package.json         # Dependencias
 ```
 
-La app estara disponible en **http://localhost:3000**
+## Requisitos
 
-### 3. Build para produccion
+- Node.js 20+
+- MySQL (para backend con DB)
+- npm o pnpm
+
+## Instalación Rápida
+
 ```bash
+# 1. Clonar/Descomprimir el proyecto
+cd interestelar-v2
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Configurar base de datos (opcional para frontend-only)
+# Editar .env con tu DATABASE_URL
+
+# 4. Seed la base de datos
+npm run db:push
+npx tsx db/seed.ts
+
+# 5. Desarrollo
+npm run dev
+
+# 6. Build para producción
 npm run build
 ```
 
-El build se genera en `dist/public/` — sube esa carpeta a cualquier hosting estatico gratis (Vercel, Netlify, GitHub Pages).
+## Deploy en Vercel/Netlify (Frontend Estático)
 
-### 4. Credenciales Admin Panel
+```bash
+npm run build
+# Desplegar la carpeta dist/public/
+```
 
-Ve a `http://localhost:3000/#/login`
+## Deploy Full-Stack (Con Backend)
 
-| Usuario | Contrasena |
+El backend usa Hono + tRPC + Drizzle ORM + MySQL.
+
+```bash
+# Producción
+npm run build
+npm start
+```
+
+## Credenciales Admin Panel
+
+| Campo | Valor |
 |---|---|
-| `admin` | `interestelar2024` |
+| Username | `admin` |
+| Password | `interestelar2024` |
 
-### 5. Estructura del proyecto
-```
-INTERESTELAR-app/
-  src/
-    pages/          ← 11 paginas (CommandCenter, Admin, Agents, etc.)
-    components/     ← NavigationBar, StatusBadge, AgentLiveMonitor
-    i18n/           ← 5 idiomas (ES, EN, ZH, HI, AR)
-  api/              ← Backend tRPC + Hono
-  db/               ← Schema + Seed (20 tablas)
-  contracts/        ← Tipos compartidos
-  public/assets/    ← 10 imagenes profesionales
-  package.json      ← Dependencias
-```
+## Rutas de la Aplicación
 
-## Caracteristicas
+| Ruta | Descripción |
+|---|---|
+| `/` | Command Center — Dashboard de crisis en tiempo real |
+| `/#/incidents` | Incident Timeline — 10 eventos con timeline |
+| `/#/stress-tests` | 3 Suites de Stress Tests |
+| `/#/agents` | Roster de 12 Agentes Autónomos |
+| `/#/financial-defense` | Defensa Financiera |
+| `/#/infrastructure` | Recuperación de Infraestructura |
+| `/#/tenants` | Gestión de Tenants |
+| `/#/governance` | Gobernanza y Auditoría |
+| `/#/monetization` | Oficinas de IA — 12 departamentos |
+| `/#/survivability` | Reporte de Supervivencia |
+| `/#/admin` | Panel de Administración (protegido) |
+| `/#/login` | Login para Admin |
 
-- **12 Agentes Autonomos** — Operando 24/7 con monitoreo en vivo
-- **5 Idiomas** — ES, EN, ZH, HI, AR (selector en la navegacion)
-- **Admin Panel** — Dashboard, Agent Control, Tenants, Governance, Audit Logs
-- **10 Paginas** — Command Center, Incidents, Stress Tests, Agents, Financial Defense, Infrastructure, Tenants, Governance, AI Offices, Survivability
-- **Imagenes IA** — 10 fotos profesionales de oficinas con IA
-- **Black Swan Cascade** — Simulacion de 10 fallas simultaneas
+## Stack Tecnológico
 
-## Stack
-React 19 + TypeScript + Vite + Tailwind CSS + tRPC + Drizzle ORM
+- **Frontend**: React 19 + TypeScript + Vite + Tailwind CSS
+- **Backend**: Hono + tRPC 11 + Drizzle ORM
+- **Base de Datos**: MySQL
+- **Autenticación**: Kimi OAuth 2.0 (opcional)
+- **i18n**: react-i18next (5 idiomas)
+- **Animaciones**: GSAP + ScrollTrigger
+- **Charts**: Chart.js
+
+## Licencia
+
+Proprietary — INTERESTELAR Financial Governance Systems
