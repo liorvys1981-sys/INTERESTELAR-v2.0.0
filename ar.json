@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "commandCenter": "مركز القيادة", "incidents": "الحوادث", "stressTests": "اختبارات الإجهاد",
+    "agents": "الوكلاء", "financialDefense": "الدفاع المالي", "infrastructure": "البنية التحتية",
+    "tenants": "المستأجرون", "governance": "الحوكمة", "offices": "مكاتب الذكاء الاصطناعي", "admin": "المشرف", "survivability": "قابلية البقاء"
+  },
+  "hero": {
+    "title": "مركز القيادة", "subtitle": "الحوكمة المالية المستقلة — وضع الأزمة نشط",
+    "blackSwan": "تتالي البجعة السوداء", "reserves": "الاحتياطيات المالية", "systemStatus": "حالة النظام",
+    "threats": "التهديدات النشطة", "autonomousMode": "الوضع المستقل"
+  },
+  "common": {
+    "crisisEvents": "أحداث الأزمة", "decisionsLog": "سجل القرارات المستقلة", "systemHealth": "صحة النظام",
+    "activeAgents": "الوكلاء المستقلون النشطون", "timestamp": "الطابع الزمني", "decision": "القرار", "target": "الهدف",
+    "impact": "التأثير", "status": "الحالة", "severity": "الخطورة", "mitigation": "التخفيف",
+    "score": "النتيجة", "excellent": "ممتاز", "pass": "نجح", "fail": "فشل", "high": "عالي",
+    "medium": "متوسط", "low": "منخفض", "critical": "حرج", "warning": "تحذير", "caution": "حذر",
+    "active": "نشط", "resolved": "محلول", "verified": "موثق"
+  },
+  "offices": {
+    "title": "مكاتب الذكاء الاصطناعي", "subtitle": "12 قسم خدمات متخصص — فريق المؤسسة المستقل",
+    "gateway": "مكتب بوابة API", "gatewayDesc": "إدارة وتوجيه API متعدد المستأجرين",
+    "orchestration": "مكتب التنظيم", "orchestrationDesc": "أتمتة سير العمل المستند إلى الأحداث",
+    "billing": "مكتب الفوترة", "billingDesc": "تتبع الاستخدام والفوترة التلقائية",
+    "observability": "مكتب المراقبة", "observabilityDesc": "القياس عن بعد والمراقبة في الوقت الفعلي",
+    "chaos": "معمل هندسة الفوضى", "chaosDesc": "التحقق من المرونة كخدمة",
+    "stripe": "مكتب أتمتة Stripe", "stripeDesc": "أتمتة معالجة المدفوعات",
+    "workflow": "مكتب محرك سير العمل", "workflowDesc": "أتمتة العمليات التجارية المستقلة",
+    "analytics": "مكتب التحليلات", "analyticsDesc": "التنبؤ والتوقعات",
+    "aiEstimator": "مكتب التقدير بالذكاء الاصطناعي", "aiEstimatorDesc": "تقدير التكلفة والأضرار الذكي",
+    "support": "مكتب دعم العملاء", "supportDesc": "عمليات خدمة العملاء المستقلة",
+    "operations": "مركز العمليات المستقلة", "operationsDesc": "الإدارة المستقلة الشاملة",
+    "legal": "مكتب الامتثال القانوني", "legalDesc": "الامتثال التنظيمي المدعوم بالذكاء الاصطناعي"
+  },
+  "survivability": {
+    "title": "تقرير قابلية البقاء", "subtitle": "التقييم النهائي في ظروف تتالي البجعة السوداء",
+    "finalScore": "النتيجة النهائية لقابلية البقاء", "composite": "المتوسط المركب", "validations": "نتائج التحقق",
+    "vulnerabilities": "نقاط الضعف المكتشفة", "weaknesses": "نقاط ضعف البنية",
+    "hardening": "التقوية الموصى بها للإنتاج", "finalVerdict": "الحكم النهائي",
+    "passed": "INTERESTELAR v2.0.0 نجح في مجموعة اختبارات الإجهاد",
+    "downloadReport": "تحميل التقرير الكامل"
+  }
+}

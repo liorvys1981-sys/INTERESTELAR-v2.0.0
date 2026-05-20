@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "commandCenter": "कमांड सेंटर", "incidents": "घटनाएं", "stressTests": "स्ट्रेस टेस्ट",
+    "agents": "एजेंट्स", "financialDefense": "वित्तीय रक्षा", "infrastructure": "इन्फ्रास्ट्रक्चर",
+    "tenants": "टेनेंट्स", "governance": "गवर्नेंस", "offices": "AI कार्यालय", "admin": "प्रशासन", "survivability": "जीवनक्षमता"
+  },
+  "hero": {
+    "title": "कमांड सेंटर", "subtitle": "स्वायत्त वित्तीय गवर्नेंस — संकट मोड सक्रिय",
+    "blackSwan": "ब्लैक स्वान कैस्केड", "reserves": "वित्तीय रिजर्व", "systemStatus": "सिस्टम स्थिति",
+    "threats": "सक्रिय खतरे", "autonomousMode": "स्वायत्त मोड"
+  },
+  "common": {
+    "crisisEvents": "संकट घटनाएं", "decisionsLog": "स्वायत्त निर्णय लॉग", "systemHealth": "सिस्टम स्वास्थ्य",
+    "activeAgents": "सक्रिय स्वायत्त एजेंट्स", "timestamp": "समय", "decision": "निर्णय", "target": "लक्ष्य",
+    "impact": "प्रभाव", "status": "स्थिति", "severity": "गंभीरता", "mitigation": "शमन",
+    "score": "स्कोर", "excellent": "उत्कृष्ट", "pass": "पास", "fail": "फेल", "high": "उच्च",
+    "medium": "मध्यम", "low": "निम्न", "critical": "गंभीर", "warning": "चेतावनी", "caution": "सावधानी",
+    "active": "सक्रिय", "resolved": "हल", "verified": "सत्यापित"
+  },
+  "offices": {
+    "title": "AI कार्यालय", "subtitle": "12 विशेष सेवा विभाग — आपकी स्वायत्त एंटरप्राइज टीम",
+    "gateway": "API गेटवे कार्यालय", "gatewayDesc": "मल्टी-टेनेंट API प्रबंधन और रूटिंग",
+    "orchestration": "ऑर्केस्ट्रेशन कार्यालय", "orchestrationDesc": "ईवेंट-ड्रिवेन वर्कफ़्लो ऑटोमेशन",
+    "billing": "बिलिंग कार्यालय", "billingDesc": "उपयोग ट्रैकिंग और स्वचालित बिलिंग",
+    "observability": "ऑब्जर्वेबिलिटी कार्यालय", "observabilityDesc": "रीयल-टाइम टेलीमेट्री और मॉनिटरिंग",
+    "chaos": "केओस इंजीनियरिंग लैब", "chaosDesc": "रिजिलिएंस-अज़-अ-सर्विस सत्यापन",
+    "stripe": "स्ट्राइप ऑटोमेशन कार्यालय", "stripeDesc": "भुगतान प्रसंस्करण स्वचालन",
+    "workflow": "वर्कफ़्लो इंजन कार्यालय", "workflowDesc": "स्वायत्त बिजनेस प्रोसेस ऑटोमेशन",
+    "analytics": "एनालिटिक्स कार्यालय", "analyticsDesc": "भविष्यवाणी और फोरकास्टिंग",
+    "aiEstimator": "AI एस्टीमेशन कार्यालय", "aiEstimatorDesc": "बुद्धिमान क्षति और लागत अनुमान",
+    "support": "ग्राहक सहायता कार्यालय", "supportDesc": "स्वायत्त ग्राहक सेवा संचालन",
+    "operations": "स्वायत्त संचालन केंद्र", "operationsDesc": "फुल-स्टैक स्वायत्त प्रबंधन",
+    "legal": "कानूनी अनुपालन कार्यालय", "legalDesc": "AI-संचालित नियामक अनुपालन"
+  },
+  "survivability": {
+    "title": "जीवनक्षमता रिपोर्ट", "subtitle": "ब्लैक स्वान कैस्केड स्थितियों में अंतिम मूल्यांकन",
+    "finalScore": "अंतिम जीवनक्षमता स्कोर", "composite": "समग्र औसत", "validations": "सत्यापन परिणाम",
+    "vulnerabilities": "पहचाने गए कमजोरियां", "weaknesses": "आर्किटेक्चर कमजोरियां",
+    "hardening": "सुझाया गया प्रोडक्शन हार्डनिंग", "finalVerdict": "अंतिम फैसला",
+    "passed": "INTERESTELAR v2.0.0 ने स्वायत्त एजेंट स्ट्रेस टेस्ट पास किया",
+    "downloadReport": "पूरी रिपोर्ट डाउनलोड करें"
+  }
+}

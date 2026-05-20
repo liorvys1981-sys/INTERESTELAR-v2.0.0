@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "commandCenter": "指挥中心", "incidents": "事件", "stressTests": "压力测试",
+    "agents": "智能代理", "financialDefense": "财务防御", "infrastructure": "基础设施",
+    "tenants": "租户", "governance": "治理", "offices": "AI办公室", "admin": "管理", "survivability": "生存能力"
+  },
+  "hero": {
+    "title": "指挥中心", "subtitle": "自主财务治理 — 危机模式已激活",
+    "blackSwan": "黑天鹅级联", "reserves": "财务储备", "systemStatus": "系统状态",
+    "threats": "活跃威胁", "autonomousMode": "自主模式"
+  },
+  "common": {
+    "crisisEvents": "危机事件", "decisionsLog": "自主决策日志", "systemHealth": "系统健康",
+    "activeAgents": "活跃自主代理", "timestamp": "时间戳", "decision": "决策", "target": "目标",
+    "impact": "影响", "status": "状态", "severity": "严重等级", "mitigation": "缓解措施",
+    "score": "评分", "excellent": "优秀", "pass": "通过", "fail": "失败", "high": "高",
+    "medium": "中", "low": "低", "critical": "严重", "warning": "警告", "caution": "注意",
+    "active": "活跃", "resolved": "已解决", "verified": "已验证"
+  },
+  "offices": {
+    "title": "AI办公室", "subtitle": "12个专业服务部门 — 您的自主企业团队",
+    "gateway": "API网关办公室", "gatewayDesc": "多租户API管理和路由",
+    "orchestration": "编排办公室", "orchestrationDesc": "事件驱动的工作流自动化",
+    "billing": "计费办公室", "billingDesc": "使用跟踪和自动开票",
+    "observability": "可观测性办公室", "observabilityDesc": "实时遥测和监控",
+    "chaos": "混沌工程实验室", "chaosDesc": "弹性即服务验证",
+    "stripe": "Stripe自动化办公室", "stripeDesc": "支付处理自动化",
+    "workflow": "工作流引擎办公室", "workflowDesc": "自主业务流程自动化",
+    "analytics": "分析办公室", "analyticsDesc": "预测分析和预测",
+    "aiEstimator": "AI估算办公室", "aiEstimatorDesc": "智能损害和成本估算",
+    "support": "客户支持办公室", "supportDesc": "自主客户服务运营",
+    "operations": "自主运营中心", "operationsDesc": "全栈自主管理",
+    "legal": "法律合规办公室", "legalDesc": "AI驱动的监管合规"
+  },
+  "survivability": {
+    "title": "生存报告", "subtitle": "黑天鹅级联条件下的最终评估",
+    "finalScore": "最终生存评分", "composite": "综合平均", "validations": "验证结果",
+    "vulnerabilities": "检测到的漏洞", "weaknesses": "架构弱点",
+    "hardening": "建议的生产加固", "finalVerdict": "最终裁决",
+    "passed": "INTERESTELAR v2.0.0通过了自主代理压力测试套件",
+    "downloadReport": "下载完整报告"
+  }
+}
