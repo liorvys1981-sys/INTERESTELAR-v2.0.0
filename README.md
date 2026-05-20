@@ -1,84 +1,73 @@
-# INTERESTELAR v2.0.0
+# React + TypeScript + Vite
 
-## Autonomous Financial Governance Platform
-### 12 Artificial Intelligence Offices Operating 24/7
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Developed by:
+Currently, two official plugins are available:
 
-LGG AUTO SUPPLIES LLC
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## React Compiler
 
-# What is INTERESTELAR?
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-INTERESTELAR is an enterprise-grade SaaS automation platform powered by 12 autonomous Artificial Intelligence agents capable of operating continuously without human intervention.
+## Expanding the ESLint configuration
 
-Each office manages a strategic ecosystem function, including:
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-- API management
-- financial automation
-- monitoring
-- security
-- compliance
-- infrastructure
-- operational recovery
-- and service coordination
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-The platform is designed for cloud execution, distributed automation, and enterprise scalability.
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
----
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-# Autonomous Architecture
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-INTERESTELAR implements a distributed intelligent-agent model capable of:
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-- making operational decisions
-- executing automated processes
-- detecting critical events
-- recovering from failures
-- monitoring infrastructure
-- and maintaining operational continuity
-
-The platform is designed for high availability and continuous operation.
-
----
-
-# Artificial Intelligence Offices
-
-Each AI Office functions as a specialized autonomous department.
-
-## Core Operations
-- Main coordination
-- Central automation
-- Service orchestration
-
-## Financial Operations
-- Automated billing
-- Stripe integration
-- Subscription management
-
-## Security Operations
-- Threat monitoring
-- Operational protection
-- Continuous supervision
-
-## Infrastructure Operations
-- Cloud orchestration
-- Deployment management
-- Balancing and recovery
-
----
-
-# SaaS Platform
-
-INTERESTELAR provides:
-
-- subscription plans
-- business automation
-- cloud infrastructure
-- and scalable operations
-
-All plans include:
-
-```txt
-14-day free trial
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```

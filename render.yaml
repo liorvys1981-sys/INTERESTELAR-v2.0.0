@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: interestelar
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/boot.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: DATABASE_URL
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_PRICE_STARTER
+        sync: false
+      - key: STRIPE_PRICE_GROWTH
+        sync: false
+      - key: STRIPE_PRICE_PROFESSIONAL
+        sync: false
+      - key: STRIPE_PRICE_ENTERPRISE
+        sync: false
+      - key: VITE_APP_URL
+        sync: false
+      - key: VITE_KIMI_AUTH_URL
+        sync: false
+      - key: VITE_APP_ID
+        sync: false
+      - key: KIMI_APP_SECRET
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: OAUTH2_REDIRECT_URI
+        sync: false
