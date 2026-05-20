@@ -9,7 +9,6 @@ import { auditRouter } from "./audit-router";
 import { governanceRouter } from "./governance-router";
 import { monetizationRouter } from "./monetization-router";
 import { survivabilityRouter } from "./survivability-router";
-import { stripeRouter } from "./stripe-router";
 
 export const appRouter = createRouter({
   ping: publicQuery.query(() => ({ ok: true, ts: Date.now() })),
@@ -23,7 +22,6 @@ export const appRouter = createRouter({
   governance: governanceRouter,
   monetization: monetizationRouter,
   survivability: survivabilityRouter,
-  stripe: stripeRouter,
 });
 
 export type AppRouter = typeof appRouter;
